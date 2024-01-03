@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* box-sizing: border-box; */
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #bbd1f8;
+}
+
+#headers{
+    width: 100%;
+    height: 10%;
+    /* background:  #36ea27; */
+    
+    background: #34ed16;
+    position: fixed;
+    top: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#headerheading{
+    /* text-align:center; */
+    /* text- ; */
+    color: #ffffff;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+
+.container .hexagonArea{
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+}
+
+
+
+.container .hexagonArea .hexagon{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 10px;
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: .5s;
+}
+
+
+.container .hexagonArea .hexagon:hover{
+    background: white;
+    transform: scale(0.8);
+}
+
+.hexagonArea{
+    display: flex;
+    /* justify-content: space-around; */
+}
+#one{
+    background: #00af50;
+    /* position: relative; */
+    right: 220px;
+    top:40px;
+    font-weight: 200;
+}
+#two{
+    background: #0071c1;
+    right:80px;
+    top:40px;
+    font-weight: 100;
+}
+    
+#three{
+    background: #7030a0;
+    right: -40px;
+    top:40px;
+    font-weight: 200;
+}
+#four{
+    background: #36ea27;
+    line-height: 25px;
+    right: -170px;
+    top:40px;
+    font-weight: 100;
+}
+
+#five{
+    background: #002160;
+    line-height: 25px;
+    right:70px;
+    top:75px;
+    font-weight: 500;
+}
+#six{
+    background: #c00000;
+    right:-60px;
+    top:75px;
+    font-weight: 100;
+}
+
+#seven{
+    background: #385624;
+    right:-180px;
+    top:75px;
+    font-weight: 100;
+}
+#eight{
+    background: #2e5495;
+    right: -380px;
+    bottom: -90px;
+    font-weight:bolder;
+
+}
+ 
+
+
+
+#footers{
+    width: 100%;
+    height: 5%;
+    background: #ffffff;
+    position: fixed;
+    bottom: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footerparagraph{
+    color: black;
+    font-weight: 520;
+    /* text-align: center; */
+    
+}
+
+.textsinto{ 
+    /* writing-mode: vertical-lr; */
+    display: inline;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    
+} 
+
+.atag{
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+        <div id="headers">
+            <h2 id="headerheading">
+                HOME
+            </h2>
+        </div>
+
+        <div class="container">
+            <div class="hexagonArea first">
+
+              <a href="https://www.bing.com/search?pglt=2083&q=mumbai&cvid=5884ec95be9043419bd50c46a3c39d5e&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARAAGEAyBggCEC4YQDIGCAMQABhAMgYIBBAAGEAyBggFEAAYQDIGCAYQLhhAMgYIBxAAGEAyBggIEEUYPNIBCDQyMzhqMGoxqAIAsAIA&FORM=ANNTA1&PC=U531" class="atag">
+                <div class="hexagon" id="one">
+                    <p class="textsinto" id="ones">
+                        Mumbai
+                    </p>
+                </div>
+              </a>
+
+              <a href="https://www.bing.com/search?q=kolkata&filters=ufn%3a%22Kolkata%22+sid%3a%22e5f8e89d-f3e0-3a9e-7b62-24348d526819%22&asbe=AS&qs=MB&pq=kol&sc=10-3&cvid=09C20222406A4E9FA1C4ED808E84357F&FORM=QBRE&sp=1&ghc=1&lq=0" class="atag">
+                <div class="hexagon" id="two">
+                    <p class="textsinto" id="twos">
+                        Kolkata
+                    </p>
+                </div>
+                </a>
+
+                <a href="https://www.bing.com/search?q=chennai&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=chennai&sc=11-7&sk=&cvid=77D2CEA38C4240129B34AFDF3A3A9DA3&ghsh=0&ghacc=0&ghpl=" class="atag">
+                <div class="hexagon" id="three">
+                    <p class="textsinto" id="threes">
+                        Chennai
+                    </p>
+                </div>
+                </a>
+
+                <a href="https://www.bing.com/search?q=bangalore&qs=n&form=QBRE&sp=-1&ghc=2&lq=0&pq=bangalore&sc=11-9&sk=&cvid=10BC3B86C6004BDB90263674872968CB&ghsh=0&ghacc=0&ghpl=" class="atag">
+                <div class="hexagon" id="four">
+                    <p class="textsinto" id="fours">
+                        Bangalore  
+                    </p>
+                </div>
+                </a>
+                
+            </div>
+
+            
+            <div class="hexagonArea middle">
+
+                <a href="https://www.bing.com/search?q=pune&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=pune&sc=11-4&sk=&cvid=FC5F44A97DBE4A23ADCCD4155079A671&ghsh=0&ghacc=0&ghpl=" class="atag">
+                <div class="hexagon" id="five">
+                    <p class="textsinto" id="fives">
+                        Pune
+                    </p>
+                </div>
+                </a>
+
+                <a href="https://www.bing.com/search?q=hyderabad&qs=n&form=QBRE&sp=-1&ghc=2&lq=0&pq=hyderabad&sc=11-9&sk=&cvid=CF64B3820F9D4DEB8F5160CC8617AF75&ghsh=0&ghacc=0&ghpl=" class="atag">
+                <div class="hexagon" id="six">
+                    <p class="textsinto" id="sixs">
+                        Hyderabad
+                    </p>
+                </div>
+                </a>
+
+                <a href="https://www.bing.com/search?q=ahmedabad&qs=n&form=QBRE&sp=-1&ghc=2&lq=0&pq=ahmedabad&sc=11-9&sk=&cvid=0401C26A05784CDFA55755041339DAE8&ghsh=0&ghacc=0&ghpl=" class="atag">
+                <div class="hexagon" id="seven">
+                    <p class="textsinto" id="sevens">
+                        Ahmedabad
+                    </p>
+                </div>
+                </a>
+                
+            </div>    
+
+            <div class="hexagonArea last">
+
+                <a href="https://www.bing.com/search?q=Jaipur&qs=MB&sc=10-0&cvid=961EB3B39EE244A9AABB4A757197EB17&FORM=QBRE&asbe=HS&filters=ufn%3a%22Jaipur%22+sid%3a%22b59bcf7b-bf6a-02ef-d975-bd51247f3fb6%22&sp=1&ghc=1&lq=0" class="atag">
+                <div class="hexagon" id="eight">
+                    <p class="textsinto" id="eights">
+                        Jaipur
+                    </p>
+                </div>
+                </a>
+
+            </div>    
+        </div>
+
+        <div id="footers">
+            <p id="footerparagraph">
+                SPSR Software Solution
+            </p>
+        </div>
+
+</body>
+</html>
